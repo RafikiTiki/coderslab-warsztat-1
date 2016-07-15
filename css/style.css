@@ -1,5 +1,197 @@
+
+
 * {
     margin: 0;
     padding: 0;
-    font-family: Raleway, Arial, sans-serif;
+    font-family: 'Raleway', Arial, sans-serif;
+    box-sizing: border-box;
 }
+
+.clearfix::after, clearfix::before {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/*
+*
+* ------------ HEADER SECTION ---------
+*
+*/
+
+header {
+    width: 100%;
+    padding: 10px 0;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+
+}
+
+header .logo {
+    float: left;
+}
+
+.green-text {
+    color: #24ba9f;
+    font-weight: bold;
+}
+
+
+
+header ul {
+    float: right;
+    list-style: none;
+}
+
+header ul li {
+    float: left;
+    margin-left: 50px;
+}
+
+header ul li a:link, header ul li a:visited {
+    color: white;
+    text-decoration: none;
+
+}
+/*
+*
+* ------------ GALLERY SECTION ---------
+*
+*/
+
+#gallery {
+    width: 100%;
+    height: 431px;
+    background: linear-gradient(#fafafa, #d1d0d5);
+
+}
+
+.gallery {
+    position: relative;
+    padding-top: 50px;
+}
+
+
+
+
+.gallery-center-img {
+    position: relative;
+    float: left;
+    width: 50%;
+/*    margin-top: 90px;*/
+}
+
+.gallery-center-img img {
+    width: 100%
+}
+
+.gallery::before {
+    height: 100px;
+    width: 50px;
+    content: "<";
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto 0;
+    color: #24ba9f;
+    font-size: 90px;
+    font-weight: 200;
+    line-height: 100px;
+}
+
+.gallery::after {
+    height: 100px;
+    width: 50px;
+    content: ">";
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto 0;
+    color: #24ba9f;
+    font-size: 90px;
+    font-weight: 200;
+    line-height: 100px;
+}
+
+.gallery-center-text-wrapper {
+/*    position: relative;*/
+    float: left;
+    width: 50%;
+    height: 341px;
+    text-align: center;
+    padding-right: 125px;
+/*    margin-top: 90px;*/
+    margin-bottom: auto;
+}
+
+
+
+.gallery-center-text-wrapper h1 {
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+article p {
+    line-height: 25px;
+    color: #767676;
+/*    padding-right: 80px*/
+}
+
+.gallery-center-text-wrapper .button {
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    padding-top: 15px;
+    background-color: #24ba9f;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.gallery-center-text-wrapper a {
+    text-transform: uppercase;
+}
+
+.gallery-center-text-wrapper a:link, .gallery-center-text-wrapper a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+/*
+*
+* ------------ GALLERY SECTION ---------
+*
+*/
+
+
+
+#shop {
+    background-color: white;
+    width: 100%;
+}
+
+.offer {
+    float: left;
+    width: 300px;
+}
+
+
+
+
+
+
+
+
+
