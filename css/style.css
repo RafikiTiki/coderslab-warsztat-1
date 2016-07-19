@@ -299,6 +299,168 @@ article p {
 
 
 
+/*
+*
+* -------------- PRICING SECTION --------------
+*
+*/
+
+#pricing {
+    height: 725px;
+    background-color: #F1F1F1;
+}
+
+#pricing h2 {
+    padding-top: 45px;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #575757;
+    padding-left: 2px;
+}
+
+.underline.big {
+    width: 310px;
+    margin-bottom: 75px;
+}
+
+.plan {
+    position: relative;
+    float: left;
+    height: 500px;
+    width: 320px;
+    background-color: #F9F9F9;
+    border: solid 2px #C2C2C2;
+    border-radius: 3px;
+}
+
+.circle {
+    border-radius: 100%;
+    border: solid 2px #C2C2C2;
+}
+
+.circle.small {
+    position: absolute;
+    top: -21px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 25px;
+    height: 25px;
+    background-color: #C2C2C2;
+    z-index: 2;
+}
+
+.circle.medium {
+    position: absolute;
+    top: -33px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    background-color: #F9F9F9;
+    z-index: 1;
+}
+
+
+.plan:nth-last-of-type(n+2) {
+    margin-right: 20px;
+}
+
+#pricing h3 {
+    color: #24ba9f;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    padding-top: 20px;
+}
+
+.circle.big {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 135px;
+    height: 135px;
+}
+
+/*!!!!!TODO - rzeczy w circle big*/
+
+
+
+
+#pricing ul {
+    position: absolute;
+    top: 255px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    list-style: none;
+}
+
+#pricing li {
+    height: 42px;
+    background-color: #E4E4E4;
+    font-size: 23px;
+    text-align: center;
+    color: #868686;
+    padding-top: 7px
+}
+
+#pricing li:nth-of-type(2n) {
+    background-color: #F1F1F1;
+    color: #525252;
+}
+
+#pricing .button {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 120px;
+    height: 35px;
+    background-color: #27C7AB;
+    border-radius: 8px;
+}
+
+#pricing .button a {
+    display: inline-block;
+    width: 120px;
+    height: 35px;
+    padding-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+
+}
+
+#pricing .button a:link, #pricing .button a:visited {
+    color: white;
+}
+
+/* TODO: dodać akcje dla hover */
+
+
+
+/* ---------- CONTACT ---------*/
+#contact {
+    height: 570px;
+    background-color: white;
+}
+
+#contact h2 {
+    padding-top: 45px;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #575757;
+    padding-left: 2px;
+}
+
 
 
 
