@@ -385,10 +385,31 @@ article p {
     margin: 0 auto;
     width: 135px;
     height: 135px;
+    font-size: 45px;
+    text-align: center;
+    padding-top: 24px;
+    color: #C2C2C2;
 }
 
 /*!!!!!TODO - rzeczy w circle big*/
 
+.circle.big span {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.circle.big sup {
+    position: relative;
+    top: -8px;
+    font-size: 15px;
+}
+
+.circle.big span.monthly {
+    display: block;
+    font-size: 17px;
+    font-weight: 600;
+/*    margin-top: 2px;*/
+}
 
 
 
@@ -452,6 +473,10 @@ article p {
     background-color: white;
 }
 
+#contact * {
+    border: none;
+}
+
 #contact h2 {
     padding-top: 45px;
     margin-bottom: 2px;
@@ -460,6 +485,153 @@ article p {
     color: #575757;
     padding-left: 2px;
 }
+
+#contact .content-left {
+    float: left;
+    width: 625px;
+/*    margin-right: 40px;*/
+}
+
+#contact .content-left input, #contact .content-left textarea {
+    width: 625px;
+    height: 60px;
+    border: 1px solid #24ba9f;
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: 200;
+    color: #d0d0d0;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+
+/* TODO: STLE INPUT PLACEHOLDERS*/
+::-webkit-input-placeholder {
+    color: #d0d0d0;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: #d0d0d0;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color: #d0d0d0;
+}
+
+:-ms-input-placeholder {
+    color: #d0d0d0;
+}
+
+#contact .content-left textarea {
+    height: 190px;
+    resize: none;
+}
+
+
+#contact .content-right {
+    float: left;
+    margin-left: 50px;
+    width: 325px;
+}
+
+#contact .check {
+    position: relative;
+    margin-top: 40px;
+
+}
+
+
+/* !!!!!!---------TODO: BLOODY CHECKBOX------------!!!!!*/
+
+
+/*.check input[type="checkbox"] {
+    display: none;
+}
+
+.check input[type="checkbox"] + label {
+    display: inline-block;
+    width: 48px;
+    height: 40px;
+    background-color: #FFFFFF;
+    border: 1px solid #24ba9f;
+}*/
+
+
+
+/*#check-terms {
+    width: 48px;
+    height: 40px;
+    background-color: #FFFFFF;
+
+
+}
+
+#contact .check label {
+
+}*/
+
+/* !!!!!!---------TODO: BLOODY CHECKBOX------------!!!!!*/
+
+input[type="checkbox"] {
+    display: none;
+}
+
+#contact input[type="checkbox"] + label::before {
+    display: inline-block;
+    content: '';
+    background: #FFFFFF;
+    border: 1px solid #24ba9f;
+    width: 45px;
+    height: 40px;
+    color: white;
+    margin: -15px 10px 0 0;
+    vertical-align: middle;
+
+}
+
+.content-right label span {
+    display: inline;
+    color: #adadad;
+    font-size: 20px
+}
+
+
+
+#contact .submit {
+    width: 325px;
+    height: 60px;
+    margin-top: 38px;
+    background-color: #24BA9F;
+    border-radius: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+/*
+*
+* ----------------- FOOTER ----------------
+*
+*/
+
+footer {
+    height: 80px;
+    margin-top: 80px;
+
+}
+
+.footer-left {
+    float: left;
+        color: #868686;
+}
+
+.footer-right {
+    float: right;
+}
+
+
+
+
 
 
 
