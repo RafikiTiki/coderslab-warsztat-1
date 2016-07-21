@@ -181,13 +181,16 @@ article p {
     width: 250px;
     height: 50px;
     border-radius: 10px;
-    padding-top: 13px;
+    padding-top: 12px;
     background-color: #24ba9f;
-    margin: 0 auto;
     margin-top: 30px;
 }
 
 .gallery-center-text-wrapper a {
+    display: block;
+    margin: 0 auto;
+    height: 50px;
+    width: 250px;
     text-transform: uppercase;
     font-size: 20px
 }
@@ -223,6 +226,11 @@ article p {
     width: 320px;
 /*    height: 250px;*/
 
+}
+
+.offer a {
+    display: block;
+    height: 60px;
 }
 
 
@@ -535,7 +543,6 @@ article p {
 }
 
 #contact .check {
-    position: relative;
     margin-top: 40px;
 
 }
@@ -576,7 +583,7 @@ input[type="checkbox"] {
     display: none;
 }
 
-#contact input[type="checkbox"] + label::before {
+#contact input[type="checkbox"] + .label-text::before {
     display: inline-block;
     content: '';
     background: #FFFFFF;
@@ -589,10 +596,13 @@ input[type="checkbox"] {
 
 }
 
+
+
 .content-right label span {
-    display: inline;
+    display: block;
+    width: 200px;
     color: #adadad;
-    font-size: 20px
+    font-size: 20px;
 }
 
 
@@ -622,18 +632,54 @@ footer {
 
 .footer-left {
     float: left;
-        color: #868686;
+    color: #868686;
+    margin-top: 10px;
 }
 
 .footer-right {
     float: right;
+    width: 325px
+}
+
+.footer-right ul {
+    float: left;
+    list-style: none;
+}
+
+.footer-right li {
+    float: left;
+    width: 35px;
+    height: 35px;
+    margin-right: 3px;
 }
 
 
 
+.footer-right li.flickr {
+    background-image: url(../img/flickr.png);
+}
 
+.footer-right li.vimeo {
+    background-image: url(../img/vimeo.png);
+}
 
+.footer-right li.pinterest {
+    background-image: url(../img/pinterest.png);
+}
 
+.footer-right li.twitter {
+    background-image: url(../img/twitter.png);
+}
 
+.footer-logo {
+    float: right;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #969696;
+    font-weight: 600;
+    margin-top: 9px
+}
 
-
+.footer-logo span {
+    font-weight: bolder;
+}
